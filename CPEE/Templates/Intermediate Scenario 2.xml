@@ -2,6 +2,7 @@
   <executionhandler>ruby</executionhandler>
   <dataelements/>
   <endpoints>
+    <timeout>http://gruppe.wst.univie.ac.at/~mangler/services/timeout.php</timeout>
     <worklist>http-post://localhost:3000</worklist>
   </endpoints>
   <attributes>
@@ -13,10 +14,9 @@
     <description xmlns="http://cpee.org/ns/description/1.0">
       <_shifting/>
       <_concerns>
-        <concern id="c1" name="BOD constraint" orgmodel="" role="" type="BOD"/>
-        <concern id="c2" name="SOD constraint" orgmodel="" role="" type="SOD"/>
-        <concern id="c3" name="" orgmodel="" role="" type="BOD"/>
-        <concern id="c4" name="" orgmodel="" role="" type="SOD"/>
+        <concern id="c1" name="Decision" orgmodel="" role="Assistant" type="BOD"/>
+        <concern id="c2" name="Research Project 1" orgmodel="" role="Assistant" type="SOD"/>
+        <concern id="c4" name="Research Project 2" orgmodel="" role="Assistant" type="SOD"/>
       </_concerns>
       <_context_data_analysis>
         <probes/>
@@ -29,9 +29,6 @@
             <_concerns>
               <concern>
                 <id>c1</id>
-              </concern>
-              <concern>
-                <id>c3</id>
               </concern>
             </_concerns>
           </arguments>
@@ -158,10 +155,10 @@
               <arguments>
                 <_concerns>
                   <concern>
-                    <id>c3</id>
+                    <id>c4</id>
                   </concern>
                   <concern>
-                    <id>c4</id>
+                    <id>c1</id>
                   </concern>
                 </_concerns>
               </arguments>
