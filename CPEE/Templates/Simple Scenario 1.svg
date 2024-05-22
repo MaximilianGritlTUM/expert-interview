@@ -1,0 +1,470 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:x="http://www.w3.org/1999/xlink" id="graphcanvas" width="62" height="170.4" style="grid-row: 1 / span 6;"><style xmlns="http://www.w3.org/2000/svg" type="text/css"><![CDATA[/*
+  This file is part of CPEE.
+
+  CPEE is free software: you can redistribute it and/or modify it under the terms
+  of the GNU General Public License as published by the Free Software Foundation,
+  either version 3 of the License, or (at your option) any later version.
+
+  CPEE is distributed in the hope that it will be useful, but WITHOUT ANY
+  WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License along with
+  CPEE (file COPYING in the main directory).  If not, see
+  <http://www.gnu.org/licenses/>.
+*/
+
+:root {
+  --wfadaptor-exec-passive: #729fcf;
+  --wfadaptor-exec-active: #ef2929;
+  --wfadaptor-exec-active-text: #cc0000;
+  --wfadaptor-exec-vote: #8ae234;
+  --wfadaptor-exec-vote-text: #73d216;
+  --wfadaptor-highlight: #0081c7;
+  --wfadaptor-base: #000000;
+  --wfadaptor-base-light: #A9A9A9;
+  --wfadaptor-label: #d4d4d4;
+  --wfadaptor-mark: #d4d4d4;
+  --wfadaptor-selected: #f57900;
+  --wfadaptor-stripe: #e9e9e9;
+  --wfadaptor-background: #ffffff;
+  --wfadaptor-menu: #ef2929;
+  --wfadaptor-border: #a1a1a1;
+}
+
+svg {
+  display:inline;
+  margin:0;
+  padding:0;
+}
+
+svg rect.group {
+  fill: var(--wfadaptor-highlight);
+  fill-opacity: 0.2;
+}
+
+svg g.passive .rfill {
+  fill: var(--wfadaptor-exec-passive);
+  fill-opacity:1;
+}
+
+svg rect.stripe.even {
+  fill: var(--wfadaptor-background);
+}
+svg rect.stripe.odd {
+  fill: var(--wfadaptor-stripe);
+}
+
+svg g.active .rfill {
+  fill: var(--wfadaptor-exec-active);
+  fill-opacity:1;
+}
+svg g.vote .rfill {
+  fill: var(--wfadaptor-exec-vote);
+  fill-opacity:1;
+}
+svg g.passive .rline {
+  stroke: var(--wfadaptor-exec-passive);
+}
+svg g.active .rline {
+  stroke: var(--wfadaptor-exec-active);
+}
+svg g.vote .rline {
+  stroke: var(--wfadaptor-exec-vote);
+}
+
+svg .rfill.menu {
+  fill: var(--wfadaptor-menu);
+  fill-opacity:1;
+}
+svg .hfill.menu {
+  fill: var(--wfadaptor-menu);
+  fill-opacity:1;
+}
+
+svg line.ourline, svg path.ourline {
+  stroke-opacity:1;
+  stroke: var(--wfadaptor-base);
+  stroke-width: 2;
+  fill: none;
+}
+
+svg rect.block {
+  stroke-width: 1;
+  stroke-dasharray: 3,5;
+  stroke: var(--wfadaptor-base);
+  fill: none;
+}
+svg rect.tile {
+  stroke-width: 1;
+  stroke-dasharray: 3,5;
+  fill: var(--wfadaptor-highlight);
+  fill-opacity: 0.3;
+  display: none;
+}
+svg .stand {
+  fill: var(--wfadaptor-background);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-base);
+  stroke-width:1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .standthin {
+  fill: var(--wfadaptor-background);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-base);
+  stroke-width:1.0;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .standfat {
+  fill: var(--wfadaptor-background);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-base);
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .greyfat {
+  fill: var(--wfadaptor-background);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-base-light);
+  stroke-width:3;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .standfat.menu {
+  stroke: var(--wfadaptor-menu);
+}
+svg .normal {
+  fill: var(--wfadaptor-base);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-base);
+  stroke-width:0.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .white {
+  fill: var(--wfadaptor-background);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-background);
+  stroke-width:1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .black {
+  fill: var(--wfadaptor-base);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-base);
+  stroke-width: 1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .grey {
+  fill: var(--wfadaptor-base-light);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-base-light);
+  stroke-width: 1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+
+svg .marked text.label {
+  color: var(--wfadaptor-label);
+  fill: var(--wfadaptor-label);
+}
+svg .marked .cfill {
+  fill: var(--wfadaptor-mark);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-mark);
+  stroke-width:0.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .marked .cline {
+  stroke: var(--wfadaptor-mark);
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+
+svg .selected text.label {
+  color: var(--wfadaptor-selected);
+  fill: var(--wfadaptor-selected);
+}
+svg .selected .cfill {
+  fill: var(--wfadaptor-selected);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-selected);
+  stroke-width:0.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .selected .cline {
+  stroke: var(--wfadaptor-selected);
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+
+svg .unknown {
+  fill: var(--wfadaptor-background);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-base);
+  stroke-width:1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+
+svg .gen {
+  fill:ButtonFace;
+  fill-opacity:1;
+  stroke-opacity:0.7;
+  stroke: var(--wfadaptor-base);
+  stroke-width:1.6;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg .standwithout {
+  fill: var(--wfadaptor-background);
+  fill-opacity:1;
+}
+svg .standtrans {
+  fill: var(--wfadaptor-background);
+}
+svg text.normal {
+  font-size:20px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:bold;
+  font-stretch:normal;
+  text-align:center;
+  line-height:125%;
+  writing-mode:horizontal-tb;
+  text-anchor:middle;
+  color: var(--wfadaptor-base);
+  fill: var(--wfadaptor-base);
+  fill-opacity:1;
+  stroke:none;
+  font-family:Arial;
+}
+svg text.inverted {
+  font-size:20px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:bold;
+  font-stretch:normal;
+  text-align:center;
+  line-height:125%;
+  writing-mode:horizontal-tb;
+  text-anchor:middle;
+  color: var(--wfadaptor-background);
+  fill: var(--wfadaptor-background);
+  fill-opacity:1;
+  stroke:none;
+  font-family:Arial;
+}
+
+svg text.super {
+  font-size:11px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:bold;
+  font-stretch:normal;
+  text-align:center;
+  line-height:100%;
+  writing-mode:horizontal-tb;
+  text-anchor:start;
+  color: var(--wfadaptor-base);
+  fill: var(--wfadaptor-base);
+  fill-opacity:1;
+  stroke:none;
+  font-family:Arial;
+}
+svg tspan.active {
+  fill: var(--wfadaptor-exec-active-text);
+  display: none;
+}
+svg tspan.vote {
+  fill: var(--wfadaptor-exec-vote-text);
+  display: none;
+}
+svg tspan.colon {
+  display: none;
+}
+svg tspan.necessary {
+  display: inline;
+}
+
+svg text.normallarge {
+  font-size:25px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:bold;
+  font-stretch:normal;
+  text-align:center;
+  line-height:125%;
+  writing-mode:horizontal-tb;
+  text-anchor:middle;
+  color: var(--wfadaptor-base);
+  fill: var(--wfadaptor-base);
+  fill-opacity:1;
+  stroke:none;
+  font-family:Arial;
+}
+
+svg text.small {
+  font-size:14px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:bold;
+  font-stretch:normal;
+  text-align:center;
+  line-height:125%;
+  writing-mode:horizontal-tb;
+  text-anchor:middle;
+  color: var(--wfadaptor-base);
+  fill: var(--wfadaptor-base);
+  fill-opacity:1;
+  stroke:none;
+  font-family:Arial;
+}
+
+svg text.label {
+  font-size:14px;
+  font-style:normal;
+  font-variant:normal;
+  font-stretch:normal;
+  text-align:center;
+  line-height:125%;
+  writing-mode:horizontal-tb;
+  text-anchor:start;
+  color: var(--wfadaptor-base);
+  fill: var(--wfadaptor-base);
+  fill-opacity:1;
+  stroke:none;
+  font-family:Arial;
+}
+
+svg text.smaller {
+  font-size:12px;
+  font-style:normal;
+  font-variant:normal;
+  font-weight:bold;
+  font-stretch:normal;
+  text-align:center;
+  line-height:125%;
+  writing-mode:horizontal-tb;
+  text-anchor:middle;
+  color: var(--wfadaptor-base);
+  fill: var(--wfadaptor-base);
+  fill-opacity:1;
+  stroke:none;
+  font-family:Arial;
+}
+
+#arrow {
+  stroke: var(--wfadaptor-base);
+  stroke-width: 2;
+  fill: var(--wfadaptor-base);
+}
+
+svg g.element[element-id].hover .hfill {
+  fill: var(--wfadaptor-selected);
+  fill-opacity:1;
+  cursor: pointer;
+}
+svg g.element[element-id].hover .hline {
+  fill: var(--wfadaptor-selected);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-selected);
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+  cursor: pointer;
+}
+svg g.element[element-id].hover .htext {
+  fill: var(--wfadaptor-selected);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-selected);
+  stroke-width:0.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+  cursor: pointer;
+}
+svg g.element[element-id].hover > text.label {
+  color: var(--wfadaptor-selected);
+  fill: var(--wfadaptor-selected);
+}
+svg g.element[element-id].hover .cfill {
+  fill: var(--wfadaptor-base);
+  fill-opacity:1;
+  stroke: var(--wfadaptor-base);
+  stroke-width:0.2;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+svg g.element[element-id].hover .cline {
+  stroke: var(--wfadaptor-base);
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:4;
+  stroke-opacity:1;
+  stroke-dasharray:none;
+}
+]]></style><rect xmlns="http://www.w3.org/2000/svg" element-row="3" class="stripe odd" x="0" y="125.2" width="64.4" height="40" style="fill: #e9e9e9; display: none"/><rect xmlns="http://www.w3.org/2000/svg" element-row="2" class="stripe even" x="0" y="85.2" width="64.4" height="40" style="fill: #e9e9e9; display: none"/><rect xmlns="http://www.w3.org/2000/svg" element-row="1" class="stripe odd" x="0" y="45.2" width="64.4" height="40" style="fill: #e9e9e9; display: none"/><rect xmlns="http://www.w3.org/2000/svg" element-row="0" class="stripe even" x="0" y="5.2" width="64.4" height="40" style="fill: #e9e9e9; display: none"/><defs xmlns="http://www.w3.org/2000/svg">  <marker id="arrow" viewBox="0 0 10 10" refX="33" refY="5" orient="auto" markerUnits="strokeWidth" markerWidth="4.5" makerHeight="4.5" style="stroke: #000000; stroke-width: 2; fill: #000000;">    <path d="m 2 2 l 6 3 l -6 3 z"/>  </marker></defs><path xmlns="http://www.w3.org/2000/svg" class="ourline" marker-end="url(#arrow)" d="M 40,25 40,65" style="stroke-opacity: 1; stroke: #000000; stroke-width: 2; fill: none;"/><path xmlns="http://www.w3.org/2000/svg" class="ourline" marker-end="url(#arrow)" d="M 40,65 40,105" style="stroke-opacity: 1; stroke: #000000; stroke-width: 2; fill: none;"/><path xmlns="http://www.w3.org/2000/svg" class="ourline" marker-end="url(#arrow)" style="stroke-opacity: 1; stroke: #000000; stroke-width: 2; fill: none;"/><path xmlns="http://www.w3.org/2000/svg" class="ourline" marker-end="url(#arrow)" style="stroke-opacity: 1; stroke: #000000; stroke-width: 2; fill: none;"/><path xmlns="http://www.w3.org/2000/svg" class="ourline" marker-end="url(#arrow)" d="M 40,105 40,145" style="stroke-opacity: 1; stroke: #000000; stroke-width: 2; fill: none;"/><path xmlns="http://www.w3.org/2000/svg" class="ourline" marker-end="url(#arrow)" style="stroke-opacity: 1; stroke: #000000; stroke-width: 2; fill: none;"/><path xmlns="http://www.w3.org/2000/svg" class="ourline" marker-end="url(#arrow)" style="stroke-opacity: 1; stroke: #000000; stroke-width: 2; fill: none;"/><g xmlns="http://www.w3.org/2000/svg" class="group" element-id="group-description"><g xmlns="http://www.w3.org/2000/svg" class="element" element-type="description" element-id="description"><g transform="translate(24.4,10.399999999999999)"><text class="super" transform="translate(30,8.4)" style="font-size: 11px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; text-align: center; line-height: 100%; writing-mode: horizontal-tb; text-anchor: start; color: #000000; fill: #000000; fill-opacity: 1; stroke: none; font-family: Arial; display: none"><tspan class="active" style="fill: #cc0000; display: none;">0</tspan><tspan class="colon" style="display: none;">,</tspan><tspan class="vote" style="fill: #73d216; display: none;">0</tspan></text><g xmlns="http://www.w3.org/2000/svg" class="activities"><title xmlns="http://www.w3.org/2000/svg">START</title><circle cx="15" cy="15" r="14" class="cline hfill rfill stand" style="fill: #ffffff; fill-opacity: 1; stroke: #000000; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"/></g></g></g><g xmlns="http://www.w3.org/2000/svg" class="element primitive" element-type="call" element-id="a1" element-endpoint="worklist"><g transform="translate(24.4,50.4)"><text class="super" transform="translate(30,8.4)" style="font-size: 11px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; text-align: center; line-height: 100%; writing-mode: horizontal-tb; text-anchor: start; color: #000000; fill: #000000; fill-opacity: 1; stroke: none; font-family: Arial; display: none"><tspan class="active" style="fill: #cc0000; display: none;">0</tspan><tspan class="colon" style="display: none;">,</tspan><tspan class="vote" style="fill: #73d216; display: none;">0</tspan></text><g xmlns="http://www.w3.org/2000/svg" class="activities"><title xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="28" height="28" rx="4" class="cline hfill rfill stand" style="fill: #ffffff; fill-opacity: 1; stroke: #000000; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"/>
+  <path transform="translate(-2,-2)" class="normal" style="fill: #000000; fill-opacity: 1; stroke: #000000; stroke-width: 0.2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;fill:#000000;" d="m 15,6.5 a 3.9999995,4 0 0 0 -4,4 3.9999995,4 0 0 0 4,4 3.9999995,4 0 0 0 4,-4 3.9999995,4 0 0 0 -4,-4 z m 0,8 -3.5,0 c -1.108,0 -2,0.892 -2,2 l 0,5 c 0,1.108 0.892,2 2,2 l 7,0 c 1.108,0 2,-0.892 2,-2 l 0,-5 c 0,-1.108 -0.892,-2 -2,-2 l -3.5,0 z"/>
+</g></g></g></g><g xmlns="http://www.w3.org/2000/svg" class="element primitive selected" element-type="call" element-id="a2" element-endpoint="worklist"><g transform="translate(24.4,90.4)"><text class="super" transform="translate(30,8.4)" style="font-size: 11px; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; text-align: center; line-height: 100%; writing-mode: horizontal-tb; text-anchor: start; color: #000000; fill: #000000; fill-opacity: 1; stroke: none; font-family: Arial; display: none"><tspan class="active" style="fill: #cc0000; display: none;">0</tspan><tspan class="colon" style="display: none;">,</tspan><tspan class="vote" style="fill: #73d216; display: none;">0</tspan></text><g xmlns="http://www.w3.org/2000/svg" class="activities"><title xmlns="http://www.w3.org/2000/svg"/><g xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="28" height="28" rx="4" class="cline hfill rfill stand" style="stroke: #f57900; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;fill: #ffffff; fill-opacity: 1; stroke: #000000; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"/>
+  <path transform="translate(-2,-2)" class="normal" style="fill: #000000; fill-opacity: 1; stroke: #000000; stroke-width: 0.2; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;fill:#000000;" d="m 15,6.5 a 3.9999995,4 0 0 0 -4,4 3.9999995,4 0 0 0 4,4 3.9999995,4 0 0 0 4,-4 3.9999995,4 0 0 0 -4,-4 z m 0,8 -3.5,0 c -1.108,0 -2,0.892 -2,2 l 0,5 c 0,1.108 0.892,2 2,2 l 7,0 c 1.108,0 2,-0.892 2,-2 l 0,-5 c 0,-1.108 -0.892,-2 -2,-2 l -3.5,0 z"/>
+</g></g></g></g><g xmlns="http://www.w3.org/2000/svg" class="element primitive" element-type="end" element-id="undefined"><g transform="translate(24.4,130.4)"><g xmlns="http://www.w3.org/2000/svg" class="activities"><title xmlns="http://www.w3.org/2000/svg"/><circle cx="15" cy="15" r="14" class="standfat" style="fill: #ffffff; fill-opacity: 1; stroke: #000000; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 4; stroke-opacity: 1; stroke-dasharray: none;"/></g></g></g></g></svg>

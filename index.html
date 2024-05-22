@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPEE BOD/SOD Expert Interview</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="iframe-container">
+            <iframe id="iframe1" title="Graph Monitor"></iframe>
+        </div>
+        <div class="iframe-container">
+            <iframe id="iframe2" title="Interview PDF"></iframe>
+        </div>
+    </div>
+
+    <form action="/submit" method="post" id="interview-form">
+        <div class="cpee-container"></div>
+        <div class="signavio-container"></div>
+        <!-- Interview questions will be dynamically generated here -->
+    </form>
+
+    
+    <div class="navigation">
+        <button id="prev-page-btn" class="page-btn" onclick="navigatePage(-1)">🠈</button>
+        <div class="counter-progress-bar">
+            <div class="page-counter" id="page-counter">1/1</div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+        <button id="next-page-btn" class="page-btn" onclick="navigatePage(1)">🠊</button>
+    </div>
+
+    <div class="finish-btn-container">
+        <button id="finish-btn" onclick="saveFormData()">Finish</button>
+    </div>
+
+    <button id="dark-theme-btn" class="dark-mode"></button>
+    
+    <!-- Sidebar toggle button -->
+    <button id="open-sidebar-btn-left" class="sidebar-toggle-btn">Orgmodel CPEE</button>
+
+    <button id="open-sidebar-btn-right" class="sidebar-toggle-btn">Orgmodel Signavio</button>
+
+    <!-- Sidebar -->
+    <div id="sidebar-left" class="sidebar left" hidden>
+        <button id="close-sidebar-btn-left" class="close-sidebar-btn">✖</button>
+        <div id="sidebar-content-left" class="sidebar-content"></div>
+    </div>
+
+    <div id="sidebar-right" class="sidebar right" hidden>
+        <button id="close-sidebar-btn-right" class="close-sidebar-btn">✖</button>
+        <div id="sidebar-content-right" class="sidebar-content"></div>
+    </div>
+
+    <script src="js_libs/vkbeautify.0.99.00.beta.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

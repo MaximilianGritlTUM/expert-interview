@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+    <page>
+        <iframes>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
+            <iframe>Signavio/Hard Scenario 1.pdf</iframe>
+        </iframes>
+        <cpee>
+            <questions>
+                <question>How many constraints are there?:</question>
+                <question>What is this?:</question>
+            </questions>
+        </cpee>
+        <signavio>
+            <questions>
+                <question>How many constraints are there?:</question>
+            </questions>
+        </signavio>
+    </page>
+    <page>
+        <iframes>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
+            <iframe>Signavio/Hard Scenario 1.pdf</iframe>
+        </iframes>
+        <cpee>
+            <questions>
+                <question>How many constraints are there?:</question>
+            </questions>
+        </cpee>
+        <signavio>
+            <questions>
+                <question>How many constraints are there?:</question>
+            </questions>
+        </signavio>
+    </page>
+    <page>
+        <iframes>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
+            <iframe>Signavio/Hard Scenario 1.pdf</iframe>
+        </iframes>
+        <cpee>
+            <questions>
+                <question>How many constraints are there?:</question>
+            </questions>
+        </cpee>
+        <signavio>
+            <questions>
+                <question>How many constraints are there?:</question>
+            </questions>
+        </signavio>
+    </page>
+    <page>
+        <iframes>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
+            <iframe>Signavio/Hard Scenario 1.pdf</iframe>
+        </iframes>
+        <cpee>
+            <questions>
+                <question>How many constraints are there?:</question>
+            </questions>
+        </cpee>
+        <signavio>
+            <questions>
+                <question>How many constraints are there?:</question>
+            </questions>
+        </signavio>
+    </page>
+    <page>
+        <iframes>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
+            <iframe>Signavio/Hard Scenario 1.pdf</iframe>
+        </iframes>
+        <cpee>
+            <questions>
+                <question>How many constraints are there?:</question>
+            </questions>
+        </cpee>
+        <signavio>
+            <questions>
+                <question>How many constraints are there?:</question>
+            </questions>
+        </signavio>
+    </page>
+    <!-- Add more pages as needed -->
+</pages>
