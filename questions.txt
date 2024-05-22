@@ -1,0 +1,9 @@
+
+Which visualization would you prefer over all?
+When comparing the different scenario groups (Simple, Intermediate, Hard), are there differences in preference of which visualization felt better between these groups?
+What advantages does the visualization in CPEE have?
+What could be improved?
+
+Can the data provided in the logs when working with the shown worklist provide useful information for resource management?
+Is the data provided enough to make a useful compliance checker?
+What could be improved?
