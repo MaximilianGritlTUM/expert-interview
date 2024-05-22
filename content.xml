@@ -3,81 +3,102 @@
     <page>
         <iframes>
             <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
-            <iframe>Signavio/Hard Scenario 1.pdf</iframe>
+            <iframe>Signavio/Simple Scenario 1.pdf</iframe>
         </iframes>
         <cpee>
             <questions>
-                <question>How many constraints are there?:</question>
-                <question>What is this?:</question>
+                <question>Who is responsible for task a1?</question>
+                <question>Who is responsible for task a2?</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
-                <question>How many constraints are there?:</question>
+                <question>Who is responsible for task a1?</question>
+                <question>Who is responsible for task a2?</question>
             </questions>
         </signavio>
     </page>
     <page>
         <iframes>
-            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
-            <iframe>Signavio/Hard Scenario 1.pdf</iframe>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/2/</iframe>
+            <iframe>Signavio/Simple Scenario 2.pdf</iframe>
         </iframes>
         <cpee>
             <questions>
-                <question>How many constraints are there?:</question>
+                <question>Who is responsible for task a1?</question>
+                <question>Who is responsible for task a2?</question>
+                <question>Who is responsible for task a3?</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
-                <question>How many constraints are there?:</question>
+                <question>Who is responsible for task a1?</question>
+                <question>Who is responsible for task a2?</question>
+                <question>Who is responsible for task a3?</question>
             </questions>
         </signavio>
     </page>
     <page>
         <iframes>
-            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
-            <iframe>Signavio/Hard Scenario 1.pdf</iframe>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/3/</iframe>
+            <iframe>Signavio/Intermediate Scenario 1.pdf</iframe>
         </iframes>
         <cpee>
             <questions>
-                <question>How many constraints are there?:</question>
+                <question>Who is responsible for task a3?</question>
+                <question>Who is responsible for task a4?</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
-                <question>How many constraints are there?:</question>
+                <question>Who is responsible for task a3?</question>
+                <question>Who is responsible for task a4?</question>
             </questions>
         </signavio>
     </page>
     <page>
         <iframes>
-            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
-            <iframe>Signavio/Hard Scenario 1.pdf</iframe>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/4/</iframe>
+            <iframe>Signavio/Intermediate Scenario 2.pdf</iframe>
         </iframes>
         <cpee>
             <questions>
-                <question>How many constraints are there?:</question>
+                <question>Who is responsible for task a2?</question>
+                <question>Who is responsible for task a3?</question>
+                <question>Who is responsible for task a4?</question>
+                <question>Who is responsible for task a5?</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
-                <question>How many constraints are there?:</question>
+                <question>Who is responsible for task a2?</question>
+                <question>Who is responsible for task a3?</question>
+                <question>Who is responsible for task a4?</question>
+                <question>Who is responsible for task a5?</question>
             </questions>
         </signavio>
     </page>
     <page>
         <iframes>
-            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/1/</iframe>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/5/</iframe>
             <iframe>Signavio/Hard Scenario 1.pdf</iframe>
         </iframes>
         <cpee>
             <questions>
-                <question>How many constraints are there?:</question>
+                <question>Who is responsible for task a2?</question>
+                <question>Who is responsible for task a3?</question>
+                <question>Who is responsible for task a4?</question>
+                <question>Who is responsible for task a5?</question>
+                <question>Who is responsible for task a6?</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
-                <question>How many constraints are there?:</question>
+                <question>Who is responsible for task a2?</question>
+                <question>Who is responsible for task a3?</question>
+                <question>Who is responsible for task a4?</question>
+                <question>Who is responsible for task a5?</question>
+                <question>Who is responsible for task a6?</question>
             </questions>
         </signavio>
     </page>
