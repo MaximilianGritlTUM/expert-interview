@@ -2,6 +2,10 @@ let currentPageIndex = 0;
 let pages = [];
 let formData = {};
 
+if (localStorage.currentPageIndex) {
+    currentPageIndex = parseInt(localStorage.currentPageIndex);
+}
+
 // Load XML file
 fetch('/content.xml')
     .then(response => response.text())
@@ -16,12 +20,11 @@ fetch('/content.xml')
         });
 
         if (localStorage.formData) {
-            console.log(localStorage.formData)
             formData = JSON.parse(localStorage.formData);
         }
 
         // Default to the first page
-        loadPage(pages[0]);
+        loadPage(pages[currentPageIndex]);
     });
 
 function saveFormData() {
@@ -123,6 +126,7 @@ function navigatePage(direction) {
     } else if (currentPageIndex >= pages.length) {
         currentPageIndex = pages.length - 1;
     }
+    localStorage.currentPageIndex = currentPageIndex;
     loadPage(pages[currentPageIndex]);
 }
 
