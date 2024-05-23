@@ -2,6 +2,12 @@ let currentPageIndex = 0;
 let pages = [];
 let formData = {};
 
+formData["Expert-Info"] = {}
+formData["Scenarios"] = {}
+formData["General-Questions"] = {}
+
+
+
 if (localStorage.currentPageIndex) {
     currentPageIndex = parseInt(localStorage.currentPageIndex);
 }
@@ -14,9 +20,9 @@ fetch('/content.xml')
         const xml = parser.parseFromString(xmlString, 'text/xml');
         pages = xml.querySelectorAll('page');
         pages.forEach((page, index) => {
-            formData[index] = {};
-            formData[index]['cpee'] = {};
-            formData[index]['signavio'] = {};
+            formData["Scenarios"][index] = {};
+            formData["Scenarios"][index]['cpee'] = {};
+            formData["Scenarios"][index]['signavio'] = {};
         });
 
         if (localStorage.formData) {
@@ -69,7 +75,7 @@ function loadPage(page) {
         const input = document.createElement('textarea');
         input.name = question.textContent.toLowerCase().replace(/\s+/g, '-');
         input.required = true;
-        input.value = formData[currentPageIndex]['cpee'][input.name] || '';
+        input.value = formData["Scenarios"][currentPageIndex]['cpee'][input.name] || '';
         input.addEventListener('input', updateFormDataCpee);
         div.appendChild(label);
         div.appendChild(input);
@@ -83,7 +89,7 @@ function loadPage(page) {
         const input = document.createElement('textarea');
         input.name = question.textContent.toLowerCase().replace(/\s+/g, '-');
         input.required = true;
-        input.value = formData[currentPageIndex]['signavio'][input.name] || '';
+        input.value = formData["Scenarios"][currentPageIndex]['signavio'][input.name] || '';
         input.addEventListener('input', updateFormDataSignavio);
         div.appendChild(label);
         div.appendChild(input);
@@ -110,12 +116,22 @@ function createIframe(src) {
 }
 
 function updateFormDataCpee(event) {
-    formData[currentPageIndex]["cpee"][event.target.name] = event.target.value;
+    formData["Scenarios"][currentPageIndex]["cpee"][event.target.name] = event.target.value;
     localStorage.formData = JSON.stringify(formData);
 }
 
 function updateFormDataSignavio(event) {
-    formData[currentPageIndex]["signavio"][event.target.name] = event.target.value;
+    formData["Scenarios"][currentPageIndex]["signavio"][event.target.name] = event.target.value;
+    localStorage.formData = JSON.stringify(formData);
+}
+
+function updateFormDataExpertInfo(event) {
+    formData["Expert-Info"][event.name] = event.value;
+    localStorage.formData = JSON.stringify(formData);
+}
+
+function updateFormDataGeneralQuestions(event) {
+    formData["General-Questions"][event.name] = event.value;
     localStorage.formData = JSON.stringify(formData);
 }
 
@@ -136,6 +152,16 @@ darkThemeBtn.addEventListener('click', toggleDarkTheme);
 function toggleDarkTheme() {
     document.body.classList.toggle('dark-theme');
     darkThemeBtn.classList.toggle('dark-mode');
+}
+
+function switchToScenarios() {
+    document.getElementsByClassName("expert-info")[0].classList.add('hidden');
+    document.getElementsByClassName("scenarios-form")[0].classList.remove('hidden');
+}
+
+function switchToGeneralQuestions() {
+    document.getElementsByClassName("scenarios-form")[0].classList.add('hidden');
+    document.getElementsByClassName("general-questions")[0].classList.remove('hidden');
 }
 
 function toggleSidebar() {
@@ -166,33 +192,12 @@ function hideSidebar(evt) {
     evt.currentTarget.hidden = true;
 }
 
-// Fetch and display XML content in the sidebar
-function loadSidebarContent() {
-    fetch('/organisation_informatik.xml')
-        .then(response => response.text())
-        .then(xmlString => {
-            const sidebarContent = document.getElementById('sidebar-content-left');
-            sidebarContent.textContent = vkbeautify.xml(xmlString);
-        });
-}
-
-function loadSidebarContentRight() {
-    fetch('/organisation_informatik.xml')
-        .then(response => response.text())
-        .then(xmlString => {
-            const sidebarContent = document.getElementById('sidebar-content-right');
-            sidebarContent.textContent = vkbeautify.xml(xmlString);
-        });
-}
-
 document.getElementById('open-sidebar-btn-left').addEventListener('click', () => {
     toggleSidebarRight();
-    loadSidebarContentRight();
 });
 
 document.getElementById('open-sidebar-btn-right').addEventListener('click', () => {
     toggleSidebar();
-    loadSidebarContent();
 });
 
 document.getElementById('close-sidebar-btn-left').addEventListener('click', toggleSidebar);
