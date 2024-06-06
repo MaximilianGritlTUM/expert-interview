@@ -7,14 +7,14 @@
         </iframes>
         <cpee>
             <questions>
-                <question>Who is responsible for task a1?</question>
-                <question>Who is responsible for task a2?</question>
+                <question>Who will be assigned to task a3?</question>
+                <question>Is Edmond Miller assigned any task?</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
-                <question>Who is responsible for task a1?</question>
                 <question>Who is responsible for task a2?</question>
+                <question>Is Rena Olson assigned any task?</question>
             </questions>
         </signavio>
     </page>
@@ -25,16 +25,18 @@
         </iframes>
         <cpee>
             <questions>
-                <question>Who is responsible for task a1?</question>
-                <question>Who is responsible for task a2?</question>
-                <question>Who is responsible for task a3?</question>
+                <question>Who will be assigned to task a2</question>
+                <question>Who will be assigned to task a3</question>
+                <question>Is Sheryl Moody assigned a task?</question>
+                <question>Time:</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
-                <question>Who is responsible for task a1?</question>
-                <question>Who is responsible for task a2?</question>
                 <question>Who is responsible for task a3?</question>
+                <question>Which task is Lillian Matthews assigned?</question>
+                <question>Which task is Gabriella Baldwin assigned?</question>
+                <question>Time:</question>
             </questions>
         </signavio>
     </page>
@@ -45,14 +47,16 @@
         </iframes>
         <cpee>
             <questions>
-                <question>Who is responsible for task a3?</question>
+                <question>Which tasks is Sheryl Moody assigned?</question>
                 <question>Who is responsible for task a4?</question>
+                <question>Time:</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
-                <question>Who is responsible for task a3?</question>
+                <question>Who is assigned task a3?</question>
                 <question>Who is responsible for task a4?</question>
+                <question>Time:</question>
             </questions>
         </signavio>
     </page>
@@ -63,18 +67,19 @@
         </iframes>
         <cpee>
             <questions>
-                <question>Who is responsible for task a2?</question>
-                <question>Who is responsible for task a3?</question>
-                <question>Who is responsible for task a4?</question>
-                <question>Who is responsible for task a5?</question>
+                <question>If the decision goes to a2, who is assigned to work on task a2?</question>
+                <question>If the decision goes to a3, who is assigned to task a3?</question>
+                <question>Is Brett Wolfe assigned in any decision?</question>
+                <question>Time:</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
                 <question>Who is responsible for task a2?</question>
                 <question>Who is responsible for task a3?</question>
-                <question>Who is responsible for task a4?</question>
-                <question>Who is responsible for task a5?</question>
+                <question>Is Parker Solomon assigned any task?</question>
+                <question>Time:</question>
+                <question>Would you have modelled it differently?</question>
             </questions>
         </signavio>
     </page>
@@ -85,20 +90,44 @@
         </iframes>
         <cpee>
             <questions>
-                <question>Who is responsible for task a2?</question>
                 <question>Who is responsible for task a3?</question>
-                <question>Who is responsible for task a4?</question>
                 <question>Who is responsible for task a5?</question>
-                <question>Who is responsible for task a6?</question>
+                <question>Is Ned Hill assigned?</question>
+                <question>Which Tasks is Neil Tyler assigned to?</question>
+                <question>Time:</question>
             </questions>
         </cpee>
         <signavio>
             <questions>
-                <question>Who is responsible for task a2?</question>
+                <question>Who is task a4 assigned to?</question>
+                <question>Who is task a5 assigned to?</question>
+                <question>Is Lillian Matthews assigned?</question>
+                <question>Which Tasks is Gerado Holland assigned to?</question>
+                <question>Time:</question>
+                <question>Would you have modelled it differently?</question>
+            </questions>
+        </signavio>
+    </page>
+    <page>
+        <iframes>
+            <iframe>http://localhost:8000/graph.html?monitor=http://localhost:8298/6/</iframe>
+            <iframe>Signavio/Hard Scenario 2.pdf</iframe>
+        </iframes>
+        <cpee>
+            <questions>
                 <question>Who is responsible for task a3?</question>
-                <question>Who is responsible for task a4?</question>
                 <question>Who is responsible for task a5?</question>
-                <question>Who is responsible for task a6?</question>
+                <question>Is Neil Tyler assigned?</question>
+                <question>Time:</question>
+            </questions>
+        </cpee>
+        <signavio>
+            <questions>
+                <question>Who is assigned to task a1?</question>
+                <question>Who is assigned to task a5?</question>
+                <question>Which tasks is Gerardo Holland assigned to?</question>
+                <question>Time:</question>
+                <question>Would you have modelled it differently?</question>
             </questions>
         </signavio>
     </page>

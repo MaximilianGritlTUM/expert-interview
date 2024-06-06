@@ -10,9 +10,9 @@
     <div class="expert-info">
         <div class="info-form-container">
             <label>Expert Name:</label>
-            <input name="expert-name" oninput="updateFormDataExpertInfo(this)">
-            <label>Expertise in area:</label>
-            <textarea name="expertise" oninput="updateFormDataExpertInfo(this)"></textarea>
+            <input name="expert-name" oninput="updateFormDataExpertInfo(this)" onload="loadFormDataExpertInfo(this)">
+            <label>Relevant expertise:</label>
+            <textarea name="expertise" oninput="updateFormDataExpertInfo(this)" onload="loadFormDataExpertInfo(this)"></textarea>
         </div>
         <div class="start-btn-container">
             <button id="start-btn" onclick="switchToScenarios()">Start</button>
@@ -75,36 +75,36 @@
             <label class="title">Visualization: </label>
             <div>
                 <label>Which visualization would you prefer over all?</label>
-                <textarea name="preference-visualization" oninput="updateFormDataGeneralQuestions(this)"></textarea>
+                <textarea name="preference-visualization" oninput="updateFormDataGeneralQuestions(this)" onload="loadFormDataGeneralQuestions(this)"></textarea>
             </div>
             <div>
                 <label>When comparing the different scenario groups (Simple, Intermediate, Hard), are there any differences in your preference?</label>
-                <textarea name="comparing-scenario-groups" oninput="updateFormDataGeneralQuestions(this)"></textarea>
+                <textarea name="comparing-scenario-groups" oninput="updateFormDataGeneralQuestions(this)" onload="loadFormDataGeneralQuestions(this)"></textarea>
             </div>
             <div>
                 <label>What advantages does the visualization in CPEE have?</label>
-                <textarea name="cpee-advantages" oninput="updateFormDataGeneralQuestions(this)"></textarea>
+                <textarea name="cpee-advantages" oninput="updateFormDataGeneralQuestions(this)" onload="loadFormDataGeneralQuestions(this)"></textarea>
             </div>
             <div>
                 <label>What disadvantages?</label>
-                <textarea name="cpee-disadvantages" oninput="updateFormDataGeneralQuestions(this)"></textarea>
+                <textarea name="cpee-disadvantages" oninput="updateFormDataGeneralQuestions(this)" onload="loadFormDataGeneralQuestions(this)"></textarea>
             </div>
             <label class="title">Worklist: </label>
             <div>
                 <label>Could the visualization in combination with the shown worklist be a useful tool in your current research projects?</label>
-                <textarea name="visualization-worklist-useful" oninput="updateFormDataGeneralQuestions(this)"></textarea>
+                <textarea name="visualization-worklist-useful" oninput="updateFormDataGeneralQuestions(this)" onload="loadFormDataGeneralQuestions(this)"></textarea>
             </div>
             <div>
                 <label>Can the data provided in the logs when working with the shown worklist provide useful information for resource management?</label>
-                <textarea name="resource-management" oninput="updateFormDataGeneralQuestions(this)"></textarea>
+                <textarea name="resource-management" oninput="updateFormDataGeneralQuestions(this)" onload="loadFormDataGeneralQuestions(this)"></textarea>
             </div>
             <div>
                 <label>Is the data provided enough to make a useful compliance checker?</label>
-                <textarea name="compliance-checker" oninput="updateFormDataGeneralQuestions(this)"></textarea>
+                <textarea name="compliance-checker" oninput="updateFormDataGeneralQuestions(this)" onload="loadFormDataGeneralQuestions(this)"></textarea>
             </div>
             <div>
                 <label>Are there any important data artefacts missing?</label>
-                <textarea name="missing-artefacts" oninput="updateFormDataGeneralQuestions(this)"></textarea>
+                <textarea name="missing-artefacts" oninput="updateFormDataGeneralQuestions(this)" onload="loadFormDataGeneralQuestions(this)"></textarea>
             </div>
         </div>
         <div class="save-btn-container">

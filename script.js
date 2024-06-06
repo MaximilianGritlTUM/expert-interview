@@ -135,6 +135,14 @@ function updateFormDataGeneralQuestions(event) {
     localStorage.formData = JSON.stringify(formData);
 }
 
+function loadFormDataGeneralQuestions(event) {
+    event.value = formData["General-Questions"][event.name]
+}
+
+function loadFormDataExpertInfo(event) {
+    event.value = formData["Expert-Info"][event.name]
+}
+
 function navigatePage(direction) {
     currentPageIndex += direction;
     if (currentPageIndex < 0) {
