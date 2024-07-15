@@ -2,10 +2,11 @@
   <executionhandler>ruby</executionhandler>
   <dataelements/>
   <endpoints>
+    <timeout>http://gruppe.wst.univie.ac.at/~mangler/services/timeout.php</timeout>
     <worklist>http-post://localhost:3000</worklist>
   </endpoints>
   <attributes>
-    <info>Intermediate Scenario 2</info>
+    <info>Hard Scenario 2</info>
     <modeltype>CPEE</modeltype>
     <theme>bodsod</theme>
   </attributes>
@@ -13,10 +14,11 @@
     <description xmlns="http://cpee.org/ns/description/1.0">
       <_shifting/>
       <_concerns>
-        <concern id="c1" name="BOD constraint" orgmodel="" role="" type="BOD"/>
-        <concern id="c2" name="SOD constraint" orgmodel="" role="" type="SOD"/>
-        <concern id="c3" name="" orgmodel="" role="" type="BOD"/>
-        <concern id="c4" name="" orgmodel="" role="" type="SOD"/>
+        <concern id="c1" name="Parallel" orgmodel="" role="Assistant" type="SOD"/>
+        <concern id="c2" name="Research Project 1" orgmodel="" role="Assistant" type="BOD"/>
+        <concern id="c3" name="Research Project 2" orgmodel="" role="Assistant" type="BOD"/>
+        <concern id="c4" name="Research Project 3" orgmodel="" role="Assistant" type="BOD"/>
+        <concern id="c5" name="Parallel 2" orgmodel="" role="Assistant" type="SOD"/>
       </_concerns>
       <_context_data_analysis>
         <probes/>
@@ -31,7 +33,7 @@
                 <id>c1</id>
               </concern>
               <concern>
-                <id>c3</id>
+                <id>c2</id>
               </concern>
             </_concerns>
           </arguments>
@@ -65,94 +67,95 @@
           </implementation>
         </documentation>
       </call>
-      <choose mode="exclusive">
-        <alternative>
-          <call id="a2" endpoint="worklist">
-            <parameters>
-              <label/>
-              <arguments>
-                <_concerns>
-                  <concern>
-                    <id>c1</id>
-                  </concern>
-                  <concern>
-                    <id>c2</id>
-                  </concern>
-                </_concerns>
-              </arguments>
-            </parameters>
-            <annotations>
-              <_generic/>
-              <_timing>
-                <_timing_weight/>
-                <_timing_avg/>
-                <explanations/>
-              </_timing>
-              <_shifting>
-                <_shifting_type>Duration</_shifting_type>
-              </_shifting>
-              <_context_data_analysis>
-                <probes/>
-                <ips/>
-              </_context_data_analysis>
-              <report>
-                <url/>
-              </report>
-              <_notes>
-                <_notes_general/>
-              </_notes>
-            </annotations>
-            <documentation>
-              <input/>
-              <output/>
-              <implementation>
-                <description/>
-              </implementation>
-            </documentation>
-          </call>
+      <call id="a2" endpoint="worklist">
+        <parameters>
+          <label/>
+          <arguments>
+            <_concerns>
+              <concern>
+                <id>c2</id>
+              </concern>
+            </_concerns>
+          </arguments>
+        </parameters>
+        <annotations>
+          <_generic/>
+          <_timing>
+            <_timing_weight/>
+            <_timing_avg/>
+            <explanations/>
+          </_timing>
+          <_shifting>
+            <_shifting_type>Duration</_shifting_type>
+          </_shifting>
+          <_context_data_analysis>
+            <probes/>
+            <ips/>
+          </_context_data_analysis>
+          <report>
+            <url/>
+          </report>
+          <_notes>
+            <_notes_general/>
+          </_notes>
+        </annotations>
+        <documentation>
+          <input/>
+          <output/>
+          <implementation>
+            <description/>
+          </implementation>
+        </documentation>
+      </call>
+      <call id="a3" endpoint="worklist">
+        <parameters>
+          <label/>
+          <arguments>
+            <_concerns>
+              <concern>
+                <id>c1</id>
+              </concern>
+              <concern>
+                <id>c3</id>
+              </concern>
+              <concern>
+                <id>c5</id>
+              </concern>
+            </_concerns>
+          </arguments>
+        </parameters>
+        <annotations>
+          <_generic/>
+          <_timing>
+            <_timing_weight/>
+            <_timing_avg/>
+            <explanations/>
+          </_timing>
+          <_shifting>
+            <_shifting_type>Duration</_shifting_type>
+          </_shifting>
+          <_context_data_analysis>
+            <probes/>
+            <ips/>
+          </_context_data_analysis>
+          <report>
+            <url/>
+          </report>
+          <_notes>
+            <_notes_general/>
+          </_notes>
+        </annotations>
+        <documentation>
+          <input/>
+          <output/>
+          <implementation>
+            <description/>
+          </implementation>
+        </documentation>
+      </call>
+      <parallel wait="-1" cancel="After Last Task in Branch">
+        <parallel_branch>
           <call id="a4" endpoint="worklist">
-            <parameters>
-              <label/>
-              <arguments>
-                <_concerns>
-                  <concern>
-                    <id>c2</id>
-                  </concern>
-                </_concerns>
-              </arguments>
-            </parameters>
-            <annotations>
-              <_generic/>
-              <_timing>
-                <_timing_weight/>
-                <_timing_avg/>
-                <explanations/>
-              </_timing>
-              <_shifting>
-                <_shifting_type>Duration</_shifting_type>
-              </_shifting>
-              <_context_data_analysis>
-                <probes/>
-                <ips/>
-              </_context_data_analysis>
-              <report>
-                <url/>
-              </report>
-              <_notes>
-                <_notes_general/>
-              </_notes>
-            </annotations>
-            <documentation>
-              <input/>
-              <output/>
-              <implementation>
-                <description/>
-              </implementation>
-            </documentation>
-          </call>
-        </alternative>
-        <otherwise>
-          <call id="a3" endpoint="worklist">
             <parameters>
               <label/>
               <arguments>
@@ -160,6 +163,48 @@
                   <concern>
                     <id>c3</id>
                   </concern>
+                </_concerns>
+              </arguments>
+            </parameters>
+            <annotations>
+              <_generic/>
+              <_timing>
+                <_timing_weight/>
+                <_timing_avg/>
+                <explanations/>
+              </_timing>
+              <_shifting>
+                <_shifting_type>Duration</_shifting_type>
+              </_shifting>
+              <_context_data_analysis>
+                <probes/>
+                <ips/>
+              </_context_data_analysis>
+              <report>
+                <url/>
+              </report>
+              <_notes>
+                <_notes_general/>
+              </_notes>
+            </annotations>
+            <documentation>
+              <input/>
+              <output/>
+              <implementation>
+                <description/>
+              </implementation>
+            </documentation>
+          </call>
+        </parallel_branch>
+        <parallel_branch>
+          <call id="a5" endpoint="worklist">
+            <parameters>
+              <label/>
+              <arguments>
+                <_concerns>
+                  <concern>
+                    <id>c5</id>
+                  </concern>
                   <concern>
                     <id>c4</id>
                   </concern>
@@ -195,7 +240,7 @@
               </implementation>
             </documentation>
           </call>
-          <call id="a5" endpoint="worklist">
+          <call id="a6" endpoint="worklist">
             <parameters>
               <label/>
               <arguments>
@@ -235,8 +280,8 @@
               </implementation>
             </documentation>
           </call>
-        </otherwise>
-      </choose>
+        </parallel_branch>
+      </parallel>
     </description>
   </description>
   <transformation>

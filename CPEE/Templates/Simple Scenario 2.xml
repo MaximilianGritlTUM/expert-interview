@@ -2,7 +2,6 @@
   <executionhandler>ruby</executionhandler>
   <dataelements/>
   <endpoints>
-    <timeout>http://gruppe.wst.univie.ac.at/~mangler/services/timeout.php</timeout>
     <worklist>http-post://localhost:3000</worklist>
   </endpoints>
   <attributes>
@@ -14,7 +13,7 @@
     <description xmlns="http://cpee.org/ns/description/1.0">
       <_shifting/>
       <_concerns>
-        <concern id="c1" name="Research Project 1" orgmodel="https://cpee.org/~demo/orgviz/organisation_informatik.xml" role="Assistant" type="SOD"/>
+        <concern id="c1" name="SOD Constraint multiple" orgmodel="https://cpee.org/~demo/orgviz/organisation_informatik.xml" role="Assistant" type="SOD"/>
       </_concerns>
       <_context_data_analysis>
         <probes/>
