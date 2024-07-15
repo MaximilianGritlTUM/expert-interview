@@ -1,0 +1,101 @@
+{
+    "Expert-Info": {
+        "expert-name": "Marisol",
+        "expertise": "No"
+    },
+    "Scenarios": {
+        "0": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a3?": "Sheryl",
+                "is-edmond-miller-assigned-any-task?": "No"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena",
+                "is-rena-olson-assigned-any-task?": "Yes, a1 and a2"
+            }
+        },
+        "1": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a2": "Pamela",
+                "who-will-be-assigned-to-task-a3": "Neil",
+                "is-sheryl-moody-assigned-a-task?": "yes, a1",
+                "time:": "38s"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a3?": "Lilian",
+                "which-task-is-lillian-matthews-assigned?": "a3",
+                "which-task-is-gabriella-baldwin-assigned?": "none",
+                "time:": "56s"
+            }
+        },
+        "2": {
+            "cpee": {
+                "which-tasks-is-sheryl-moody-assigned?": "a1, a2",
+                "who-is-responsible-for-task-a4?": "Mary",
+                "time:": "45s"
+            },
+            "signavio": {
+                "who-is-assigned-task-a3?": "Rena",
+                "who-is-responsible-for-task-a4?": "Tania",
+                "time:": "48s"
+            }
+        },
+        "3": {
+            "cpee": {
+                "if-the-decision-goes-to-a2,-who-is-assigned-to-work-on-task-a2?": "Sheryl",
+                "if-the-decision-goes-to-a3,-who-is-assigned-to-task-a3?": "Mary",
+                "is-brett-wolfe-assigned-in-any-decision?": "No",
+                "time:": "50s"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena",
+                "who-is-responsible-for-task-a3?": "Rena",
+                "is-parker-solomon-assigned-any-task?": "yes, a4, a5",
+                "time:": "1m",
+                "would-you-have-modelled-it-differently?": "NA"
+            }
+        },
+        "4": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamela",
+                "who-is-responsible-for-task-a5?": "Ned",
+                "is-ned-hill-assigned?": "yes",
+                "which-tasks-is-neil-tyler-assigned-to?": "a5, a6",
+                "time:": "1m, 46s"
+            },
+            "signavio": {
+                "who-is-task-a4-assigned-to?": "Gerardo",
+                "who-is-task-a5-assigned-to?": "Lilian",
+                "is-lillian-matthews-assigned?": "yes",
+                "which-tasks-is-gerado-holland-assigned-to?": "a3, a4",
+                "time:": "1m 13s",
+                "would-you-have-modelled-it-differently?": "NA"
+            }
+        },
+        "5": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamela",
+                "who-is-responsible-for-task-a5?": "Ned",
+                "is-neil-tyler-assigned?": "yes",
+                "time:": "2m 2s"
+            },
+            "signavio": {
+                "who-is-assigned-to-task-a1?": "Dolly",
+                "who-is-assigned-to-task-a5?": "Lilian",
+                "which-tasks-is-gerardo-holland-assigned-to?": "a2",
+                "time:": "1m 19s"
+            }
+        }
+    },
+    "General-Questions": {
+        "preference-visualization": "I found more easy to understand the one from Signavio, but it would have been better with colours. I would have preferred the CPEE one but with static labels.",
+        "comparing-scenario-groups": "When it scales it was easier to follow the CPEE one. I did not like the overlapping boxes of Signavio, it was confusing. ",
+        "cpee-advantages": "Clear actor points. ",
+        "cpee-disadvantages": "Labels disapearing. ",
+        "visualization-worklist-useful": "Yes",
+        "advantages-signavio-worklist": "Mainly the simulation one",
+        "resource-management": "Yes",
+        "compliance-checker": "Yes, because then a compliance violation can not happen.",
+        "missing-artefacts": "-"
+    }
+}

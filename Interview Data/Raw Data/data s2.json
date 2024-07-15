@@ -1,0 +1,101 @@
+{
+    "Expert-Info": {
+        "expert-name": "Johannes Loebbecke",
+        "expertise": "Multiple years of Process Management, Focus on Compliance"
+    },
+    "Scenarios": {
+        "0": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a3?": "Sheryl Moody",
+                "is-edmond-miller-assigned-any-task?": "No"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena Olsen",
+                "is-rena-olson-assigned-any-task?": "Yes"
+            }
+        },
+        "1": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a2": "Pamela Velez",
+                "who-will-be-assigned-to-task-a3": "Neil Tyler",
+                "is-sheryl-moody-assigned-a-task?": "Yes",
+                "time:": "43s"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a3?": "Gerardo Holland",
+                "which-task-is-lillian-matthews-assigned?": "a4",
+                "which-task-is-gabriella-baldwin-assigned?": "Nothing",
+                "time:": "41"
+            }
+        },
+        "2": {
+            "cpee": {
+                "which-tasks-is-sheryl-moody-assigned?": "a1, a2",
+                "who-is-responsible-for-task-a4?": "Mary Hampton",
+                "time:": "1:23"
+            },
+            "signavio": {
+                "who-is-assigned-task-a3?": "Rena Olson",
+                "who-is-responsible-for-task-a4?": "Tania Castillo",
+                "time:": "1:56"
+            }
+        },
+        "3": {
+            "cpee": {
+                "if-the-decision-goes-to-a2,-who-is-assigned-to-work-on-task-a2?": "Sheryl Moody",
+                "if-the-decision-goes-to-a3,-who-is-assigned-to-task-a3?": "Edmond Miller",
+                "is-brett-wolfe-assigned-in-any-decision?": "No",
+                "time:": "2.16"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena Olson",
+                "who-is-responsible-for-task-a3?": "Rena Olsen",
+                "is-parker-solomon-assigned-any-task?": "Yes",
+                "time:": "50s",
+                "would-you-have-modelled-it-differently?": "No"
+            }
+        },
+        "4": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamela Velez",
+                "who-is-responsible-for-task-a5?": "Neil Tyler",
+                "is-ned-hill-assigned?": "No",
+                "which-tasks-is-neil-tyler-assigned-to?": "a5, a6",
+                "time:": "3.30"
+            },
+            "signavio": {
+                "who-is-task-a4-assigned-to?": "Gerardo Hollan",
+                "who-is-task-a5-assigned-to?": "Lillian Matthews",
+                "is-lillian-matthews-assigned?": "Yes",
+                "which-tasks-is-gerado-holland-assigned-to?": "a3, a4",
+                "time:": "1.26",
+                "would-you-have-modelled-it-differently?": "No swimlanes, just groups"
+            }
+        },
+        "5": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamely Velez",
+                "who-is-responsible-for-task-a5?": "Neil Tyler",
+                "is-neil-tyler-assigned?": "Yes",
+                "time:": "2.10"
+            },
+            "signavio": {
+                "who-is-assigned-to-task-a1?": "Dolly Padilla",
+                "who-is-assigned-to-task-a5?": "Dolly Padilla",
+                "which-tasks-is-gerardo-holland-assigned-to?": "a3, a4",
+                "time:": "58s",
+                "would-you-have-modelled-it-differently?": "no swimlanes, just groups"
+            }
+        }
+    },
+    "General-Questions": {
+        "preference-visualization": "Purely Visualization BPM seems better here, but it struggles with factors like coordinates, dataflow => Implementation",
+        "comparing-scenario-groups": "Simple CPEE is better, when you add parrarell branches CPEE becomes very \"long\" which becomes difficult",
+        "cpee-advantages": "doesnt grow as much in space with larger processes",
+        "cpee-disadvantages": "parrarell branches can be a bit confusing, maybe the parrarell should be visualized together with the Binding",
+        "visualization-worklist-useful": "Yes, it can directly enfore legal constraint and defeasible logic in the process implementation",
+        "resource-management": "Yes, because you can see who was assigned which tasks and potentially spot things like a certain resource was used more than others so it might need more maintenance, etc",
+        "compliance-checker": "No, because for compliance checking there is still a lot of open research towards proper formalization of compliance requirements which are needed to combine this with this worklist implementation. Question is also if you can do any pre analysis, depending on whether you can \"simulate\" the worklist otherwise your compliance checking would be restricted to live and ex-post",
+        "missing-artefacts": "Not that I can think off"
+    }
+}

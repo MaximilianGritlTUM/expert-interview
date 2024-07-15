@@ -1,0 +1,101 @@
+{
+    "Expert-Info": {
+        "expert-name": "Michel Kunkler",
+        "expertise": "BPMN"
+    },
+    "Scenarios": {
+        "0": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a3?": "Sheryl Moody",
+                "is-edmond-miller-assigned-any-task?": "No"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena Olson",
+                "is-rena-olson-assigned-any-task?": "yes"
+            }
+        },
+        "1": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a2": "Pamela Velez",
+                "who-will-be-assigned-to-task-a3": "Neil Tyler",
+                "is-sheryl-moody-assigned-a-task?": "yes",
+                "time:": "1:08"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a3?": "Gerardo Holland",
+                "which-task-is-lillian-matthews-assigned?": "a4",
+                "which-task-is-gabriella-baldwin-assigned?": "None",
+                "time:": "42s"
+            }
+        },
+        "2": {
+            "cpee": {
+                "which-tasks-is-sheryl-moody-assigned?": "a1",
+                "who-is-responsible-for-task-a4?": "Mary Hampton",
+                "time:": "1:30"
+            },
+            "signavio": {
+                "who-is-assigned-task-a3?": "Rena Olson",
+                "who-is-responsible-for-task-a4?": "Tania Castillo",
+                "time:": "1:07"
+            }
+        },
+        "3": {
+            "cpee": {
+                "if-the-decision-goes-to-a2,-who-is-assigned-to-work-on-task-a2?": "Sheryl Moody",
+                "if-the-decision-goes-to-a3,-who-is-assigned-to-task-a3?": "Edmond Miller",
+                "is-brett-wolfe-assigned-in-any-decision?": "No",
+                "time:": "1:40"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena Olson",
+                "who-is-responsible-for-task-a3?": "Rena Olson",
+                "is-parker-solomon-assigned-any-task?": "yes",
+                "time:": "0:42",
+                "would-you-have-modelled-it-differently?": "no"
+            }
+        },
+        "4": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamela Velez",
+                "who-is-responsible-for-task-a5?": "Neil Tyler",
+                "is-ned-hill-assigned?": "no",
+                "which-tasks-is-neil-tyler-assigned-to?": "a5, a6",
+                "time:": "2:08"
+            },
+            "signavio": {
+                "who-is-task-a4-assigned-to?": "Gerado Holland",
+                "who-is-task-a5-assigned-to?": "Lilian Matthews",
+                "is-lillian-matthews-assigned?": "yes",
+                "which-tasks-is-gerado-holland-assigned-to?": "a3, a4",
+                "time:": "1:05",
+                "would-you-have-modelled-it-differently?": "would not have mixed swim lanes and boxes"
+            }
+        },
+        "5": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamela Velez",
+                "who-is-responsible-for-task-a5?": "Neil Tyler",
+                "is-neil-tyler-assigned?": "yes",
+                "time:": "1:01"
+            },
+            "signavio": {
+                "who-is-assigned-to-task-a1?": "Dolly Padilla",
+                "who-is-assigned-to-task-a5?": "Lilian Matthews",
+                "which-tasks-is-gerardo-holland-assigned-to?": "a3, a4",
+                "time:": "1:10",
+                "would-you-have-modelled-it-differently?": "would not have mixed swim lanes and boxes"
+            }
+        }
+    },
+    "General-Questions": {
+        "preference-visualization": "Signavio",
+        "comparing-scenario-groups": "The harder it gets the more likely I would prefer Signavio",
+        "cpee-advantages": "Good initial overview",
+        "cpee-disadvantages": "Hard to follow in complicated settings",
+        "visualization-worklist-useful": "no",
+        "resource-management": "yes",
+        "compliance-checker": "n.a.",
+        "missing-artefacts": "no"
+    }
+}

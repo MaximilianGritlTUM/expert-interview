@@ -1,0 +1,101 @@
+{
+    "Expert-Info": {
+        "expert-name": "Schumann Felix",
+        "expertise": "Ressource Organization"
+    },
+    "Scenarios": {
+        "0": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a3?": "Sheryl Moody",
+                "is-edmond-miller-assigned-any-task?": "Nein"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena Olson",
+                "is-rena-olson-assigned-any-task?": "yes"
+            }
+        },
+        "1": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a3": "Neil Tyler",
+                "who-will-be-assigned-to-task-a2": "Pamela Velez",
+                "is-sheryl-moody-assigned-a-task?": "yes",
+                "time:": "45s"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a3?": "Gerardo Holland",
+                "which-task-is-lillian-matthews-assigned?": "A4",
+                "which-task-is-gabriella-baldwin-assigned?": "None",
+                "time:": "36"
+            }
+        },
+        "2": {
+            "cpee": {
+                "which-tasks-is-sheryl-moody-assigned?": "a1",
+                "who-is-responsible-for-task-a4?": "Mary Hampton",
+                "time:": "1:56"
+            },
+            "signavio": {
+                "who-is-assigned-task-a3?": "Rena Olson",
+                "who-is-responsible-for-task-a4?": "Rena Olson ",
+                "time:": "1:24"
+            }
+        },
+        "3": {
+            "cpee": {
+                "if-the-decision-goes-to-a2,-who-is-assigned-to-work-on-task-a2?": "Sheryl Moody",
+                "if-the-decision-goes-to-a3,-who-is-assigned-to-task-a3?": "Edmond Miller",
+                "is-brett-wolfe-assigned-in-any-decision?": "a5",
+                "time:": "55"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena Olson",
+                "who-is-responsible-for-task-a3?": "Rena Olson",
+                "is-parker-solomon-assigned-any-task?": "a4, a5",
+                "time:": "46",
+                "would-you-have-modelled-it-differently?": "no"
+            }
+        },
+        "4": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamela Valez",
+                "who-is-responsible-for-task-a5?": "Neil Tyler",
+                "is-ned-hill-assigned?": "No",
+                "which-tasks-is-neil-tyler-assigned-to?": "a5",
+                "time:": "2.04"
+            },
+            "signavio": {
+                "who-is-task-a4-assigned-to?": "Dolly Padilla",
+                "who-is-task-a5-assigned-to?": "Dolly Padilla",
+                "is-lillian-matthews-assigned?": "No",
+                "which-tasks-is-gerado-holland-assigned-to?": "None",
+                "time:": "1.50",
+                "would-you-have-modelled-it-differently?": "No mixture between swimlanes and groups"
+            }
+        },
+        "5": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamela Valez",
+                "who-is-responsible-for-task-a5?": "Neil Tyler",
+                "is-neil-tyler-assigned?": "a5, a6",
+                "time:": "1.12"
+            },
+            "signavio": {
+                "who-is-assigned-to-task-a1?": "Dolly Padilla",
+                "who-is-assigned-to-task-a5?": "Lilian Matthews",
+                "which-tasks-is-gerardo-holland-assigned-to?": "a3,a4",
+                "time:": "51",
+                "would-you-have-modelled-it-differently?": "no mix between swimlanes and groups"
+            }
+        }
+    },
+    "General-Questions": {
+        "preference-visualization": "BOD/SOD CPEE visualization ",
+        "comparing-scenario-groups": "Strengths of visualization come with complexity ",
+        "cpee-advantages": "Colors SOD/BOD, Spanning over multiple tasks",
+        "cpee-disadvantages": "role description should rather be linked to task not to BOD/SOD visualization part",
+        "visualization-worklist-useful": "yes ",
+        "resource-management": "yes",
+        "compliance-checker": "yes",
+        "missing-artefacts": "type of allocation algorithm (round robin, fifo, etc.)"
+    }
+}

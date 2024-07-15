@@ -1,0 +1,76 @@
+{
+    "Expert-Info": {},
+    "Scenarios": {
+        "0": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a3?": "Sheryl Moody",
+                "is-edmond-miller-assigned-any-task?": "No"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena Olson",
+                "is-rena-olson-assigned-any-task?": "Yes"
+            }
+        },
+        "1": {
+            "cpee": {
+                "who-will-be-assigned-to-task-a2": "Pamela Velez",
+                "who-will-be-assigned-to-task-a3": "Neil Tyler",
+                "is-sheryl-moody-assigned-a-task?": "Yes"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a3?": "Gerardo Holland",
+                "which-task-is-lillian-matthews-assigned?": "Yes",
+                "which-task-is-gabriella-baldwin-assigned?": "None"
+            }
+        },
+        "2": {
+            "cpee": {
+                "which-tasks-is-sheryl-moody-assigned?": "a1, a2",
+                "who-is-responsible-for-task-a4?": "Mary Hampton"
+            },
+            "signavio": {
+                "who-is-assigned-task-a3?": "Rena Olson",
+                "who-is-responsible-for-task-a4?": "Rena Olson"
+            }
+        },
+        "3": {
+            "cpee": {
+                "if-the-decision-goes-to-a2,-who-is-assigned-to-work-on-task-a2?": "Sheryl Moody",
+                "if-the-decision-goes-to-a3,-who-is-assigned-to-task-a3?": "Edmond Miller",
+                "is-brett-wolfe-assigned-in-any-decision?": "Yes"
+            },
+            "signavio": {
+                "who-is-responsible-for-task-a2?": "Rena Olson",
+                "who-is-responsible-for-task-a3?": "Rena Olson",
+                "is-parker-solomon-assigned-any-task?": "Yes"
+            }
+        },
+        "4": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamela Velez",
+                "who-is-responsible-for-task-a5?": "Neil Tyler",
+                "is-ned-hill-assigned?": "No",
+                "which-tasks-is-neil-tyler-assigned-to?": "a5, a6"
+            },
+            "signavio": {
+                "who-is-task-a4-assigned-to?": "Gerardo Holland",
+                "who-is-task-a5-assigned-to?": "Lillian Matthews",
+                "is-lillian-matthews-assigned?": "Yes",
+                "which-tasks-is-gerado-holland-assigned-to?": "a3, a4"
+            }
+        },
+        "5": {
+            "cpee": {
+                "who-is-responsible-for-task-a3?": "Pamela Velez",
+                "who-is-responsible-for-task-a5?": "Neil Tyler",
+                "is-neil-tyler-assigned?": "Yes"
+            },
+            "signavio": {
+                "who-is-assigned-to-task-a1?": "Dolly Padilla",
+                "who-is-assigned-to-task-a5?": "Dolly Padilla",
+                "which-tasks-is-gerardo-holland-assigned-to?": "a3, a4"
+            }
+        }
+    },
+    "General-Questions": {}
+}
